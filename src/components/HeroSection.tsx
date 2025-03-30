@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          Concepteur Développeur <span className="text-emerald-500">d'applications</span>
+          Conception Développement  <span className="text-emerald-500">d'applications</span>
         </motion.h1>
         
         <motion.p 
@@ -101,7 +101,7 @@ const HeroSection: React.FC = () => {
           <div className="grid grid-cols-2 gap-4">
             {[
               { icon: <Server className="text-emerald-500 mb-2" size={24} />, title: "API Design", desc: "RESTful" },
-              { icon: <Database className="text-emerald-500 mb-2" size={24} />, title: "Database", desc: "SQL" },
+              { icon: <Database className="text-emerald-500 mb-2" size={24} />, title: "Database", desc: "SQL & PostgreSQL" },
               { icon: <Cpu className="text-emerald-500 mb-2" size={24} />, title: "Microservices", desc: "Architecture & Design" },
               { icon: <Layers className="text-emerald-500 mb-2" size={24} />, title: "DevOps", desc: "CI/CD" }
             ].map((item, index) => (

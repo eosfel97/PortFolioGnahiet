@@ -47,111 +47,118 @@ const CareerPathSection: React.FC = () => {
             aria-hidden="true"
           />
           
-          {/* Formation - BUT Informatique */}
-          <ScrollAnimationWrapper
-            id="career-item-1"
-            className="relative mb-20"
-            animationType="fade"
-          >
-            <div className="flex flex-col md:flex-row items-center">
-              <motion.div 
-                className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-2 md:order-1"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8 }}
-              >
-                <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center justify-end mb-2">
-                    <h3 className="text-xl font-bold mr-2">BUT Informatique</h3>
-                    <BookOpen className="text-emerald-500" size={20} aria-hidden="true" />
-                  </div>
-                  <p className="text-emerald-500 mb-2">Université Paris-Saclay</p>
-                  <p className="text-gray-400 mb-4">
-                    Formation en cours spécialisée dans le développement d'applications, avec une attention particulière aux bases de données et à la conception d'API.
-                  </p>
-                  <div className="flex items-center justify-end text-gray-500">
-                    <Calendar size={16} className="ml-2 mr-1" aria-hidden="true" />
-                    <span>2023 - Présent</span>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div 
-                className="absolute left-0 md:left-1/2 top-6 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 transform md:translate-x-[-50%] z-10"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 }}
-                aria-hidden="true"
-              />
-              <div className="md:w-1/2 md:pl-12 order-1 md:order-2">
-                {/* Version mobile pour le résumé des compétences */}
-                <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
-                  <h4 className="font-semibold">Compétences acquises</h4>
-                  <ul className="list-disc list-inside text-gray-400 mt-2">
-                    <li>Développement fullstack (Java, JavaScript)</li>
-                    <li>Conception et modélisation de bases de données</li>
-                    <li>Architecture logicielle et patterns de conception</li>
-                    <li>Gestion de projet agile et méthodes DevOps</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </ScrollAnimationWrapper>
+ {/* Licence Professionnelle Métiers de l’informatique : Systèmes d'information et gestion de données */}
+<ScrollAnimationWrapper
+  id="career-item-1"
+  className="relative mb-20"
+  animationType="fade"
+>
+  <div className="flex flex-col md:flex-row items-center">
+    <motion.div 
+      className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-2 md:order-1"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
+        <div className="flex items-center justify-end mb-2">
+          <h3 className="text-xl font-bold mr-2">Licence Pro – Systèmes d'information et gestion de données</h3>
+          <BookOpen className="text-emerald-500" size={20} aria-hidden="true" />
+        </div>
+        <p className="text-emerald-500 mb-2">Cnam, Évry</p>
+        <p className="text-gray-400 mb-4">
+          Formation en cours spécialisée dans le développement d’applications web et mobiles, avec un fort accent sur la conception d’API, la gestion de bases de données (relationnelles, NoSQL, géographiques), l’architecture logicielle, la virtualisation et la parallélisation. Elle vise une insertion professionnelle immédiate par la pratique de projets concrets.
+        </p>
+        <div className="flex items-center justify-end text-gray-500">
+          <Calendar size={16} className="ml-2 mr-1" aria-hidden="true" />
+          <span>2024 – Présent</span>
+        </div>
+      </div>
+    </motion.div>
 
-          {/* Formation - BTS SIO SLAM */}
-          <ScrollAnimationWrapper
-            id="career-item-2"
-            className="relative mb-20"
-            animationType="fade"
-            delay={0.2}
-          >
-            <div className="flex flex-col md:flex-row items-center">
-              <motion.div 
-                className="md:w-1/2 mb-8 md:mb-0 md:pl-12 order-2"
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8 }}
-              >
-                <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center mb-2">
-                    <BookOpen className="text-emerald-500 mr-2" size={20} aria-hidden="true" />
-                    <h3 className="text-xl font-bold">BTS SIO option SLAM</h3>
-                  </div>
-                  <p className="text-emerald-500 mb-2">Lycée Parc de Vilgénis, Massy</p>
-                  <p className="text-gray-400 mb-4">
-                    Formation technique en développement d'applications avec approfondissement des langages de programmation et des concepts de base de données.
-                  </p>
-                  <div className="flex items-center text-gray-500">
-                    <Calendar size={16} className="mr-1" aria-hidden="true" />
-                    <span>2021 - 2023</span>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div 
-                className="absolute left-0 md:left-1/2 top-6 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 transform md:translate-x-[-50%] z-10"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 }}
-                aria-hidden="true"
-              />
-              <div className="md:w-1/2 md:pr-12 md:text-right order-1">
-                <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
-                  <h4 className="font-semibold">Compétences acquises</h4>
-                  <ul className="list-disc list-inside text-gray-400 mt-2">
-                    <li>Développement d'applications (Java, PHP, C#)</li>
-                    <li>Administration de bases de données relationnelles</li>
-                    <li>Conception et développement web</li>
-                    <li>Méthodologies de gestion de projet</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </ScrollAnimationWrapper>
+    <motion.div 
+      className="absolute left-0 md:left-1/2 top-6 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 transform md:translate-x-[-50%] z-10"
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 }}
+      aria-hidden="true"
+    />
 
-          {/* Certification - Formation continue */}
+    <div className="md:w-1/2 md:pl-12 order-1 md:order-2">
+      {/* Version mobile pour le résumé des compétences */}
+      <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
+        <h4 className="font-semibold">Compétences acquises</h4>
+        <ul className="list-disc list-inside text-gray-400 mt-2">
+          <li>Développement fullstack (Java, JavaScript, React)</li>
+          <li>Modélisation et gestion de bases de données (SQL, NoSQL, géographiques)</li>
+          <li>Conception d’API web RESTful</li>
+          <li>Virtualisation, parallélisation et architecture logicielle</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ScrollAnimationWrapper>
+
+
+          {/* Titre Professionnel Concepteur Développeur d'Applications  */}
+<ScrollAnimationWrapper
+  id="career-item-2"
+  className="relative mb-20"
+  animationType="fade"
+  delay={0.2}
+>
+  <div className="flex flex-col md:flex-row items-center">
+    <motion.div 
+      className="md:w-1/2 mb-8 md:mb-0 md:pl-12 order-2"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
+        <div className="flex items-center mb-2">
+          <BookOpen className="text-emerald-500 mr-2" size={20} aria-hidden="true" />
+          <h3 className="text-xl font-bold">Titre Professionnel Concepteur Développeur d'Applications</h3>
+        </div>
+        <p className="text-emerald-500 mb-2">Greta de l'Essonne, Massy</p>
+        <p className="text-gray-400 mb-4">
+          Formation professionnalisante couvrant l’ensemble du cycle de développement logiciel : analyse des besoins, conception, développement orienté objet (PHP, Java), tests, déploiement, maintenance, et gestion de projet en méthode agile. Elle intègre également des compétences en base de données SQL/NoSQL, en intégration web (HTML/CSS, Twig, JavaScript), ainsi qu'une initiation à la sécurité, au référencement, et aux outils collaboratifs (Git, DevOps).
+        </p>
+        <div className="flex items-center text-gray-500">
+          <Calendar size={16} className="mr-1" aria-hidden="true" />
+          <span>2022 - 2023</span>
+        </div>
+      </div>
+    </motion.div>
+
+    <motion.div 
+      className="absolute left-0 md:left-1/2 top-6 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 transform md:translate-x-[-50%] z-10"
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 }}
+      aria-hidden="true"
+    />
+
+    <div className="md:w-1/2 md:pr-12 md:text-right order-1">
+      <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
+        <h4 className="font-semibold">Compétences acquises</h4>
+        <ul className="list-disc list-inside text-gray-400 mt-2">
+          <li>Développement backend avec PHP, Symfony et Java</li>
+          <li>Conception et administration de bases de données (SQL/NoSQL)</li>
+          <li>Intégration web (HTML5, CSS3, Twig, JavaScript, Bootstrap)</li>
+          <li>Gestion de projet en méthode agile (Scrum)</li>
+          <li>Versioning avec Git et bonnes pratiques DevOps</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ScrollAnimationWrapper>
+
+
+          {/*  Titre Professionnel Développeur Web et Mobile */}
           <ScrollAnimationWrapper
             id="career-item-3"
             className="relative mb-20"
@@ -168,16 +175,16 @@ const CareerPathSection: React.FC = () => {
               >
                 <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
                   <div className="flex items-center justify-end mb-2">
-                    <h3 className="text-xl font-bold mr-2">Certification Spring Boot</h3>
+                    <h3 className="text-xl font-bold mr-2">Titre Professionnel Développeur Web et Mobile</h3>
                     <Award className="text-emerald-500" size={20} aria-hidden="true" />
                   </div>
-                  <p className="text-emerald-500 mb-2">Formation en ligne spécialisée</p>
+                  <p className="text-emerald-500 mb-2">PHILIANCE Formation,Evry</p>
                   <p className="text-gray-400 mb-4">
-                    Certification professionnelle dans le développement d'API REST avec Spring Boot et les bonnes pratiques d'architecture microservices.
-                  </p>
+                  Formation orientée développement web fullstack, axée sur la programmation PHP orientée objet, l’architecture MVC avec Symfony, la gestion de bases de données (SQL, Doctrine), et l’intégration web (HTML, CSS, Twig, JavaScript, Bootstrap).
+                  Elle inclut également des compétences en gestion de projet (Scrum), versioning avec Git, sécurité, SEO, et développement d’interfaces avec ReactJS.                  </p>
                   <div className="flex items-center justify-end text-gray-500">
                     <Calendar size={16} className="ml-2 mr-1" aria-hidden="true" />
-                    <span>2022</span>
+                    <span>2021-2022</span>
                   </div>
                 </div>
               </motion.div>
@@ -193,119 +200,77 @@ const CareerPathSection: React.FC = () => {
                 <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
                   <h4 className="font-semibold">Compétences acquises</h4>
                   <ul className="list-disc list-inside text-gray-400 mt-2">
-                    <li>Conception d'API REST avec Spring Boot</li>
-                    <li>Sécurité et authentification avec JWT</li>
-                    <li>Tests unitaires et d'intégration</li>
-                    <li>Documentation d'API avec Swagger</li>
+                    <li>Développement backend avec PHP et Symfony</li>
+                    <li>Conception de bases de données SQL avec Doctrine</li>
+                    <li>Intégration web avec HTML, CSS, Twig et Bootstrap</li>
+                    <li>Programmation orientée objet et tests unitaires</li>
+                    <li>Développement frontend avec JavaScript et ReactJS</li>
+                    <li>Utilisation de Git et gestion de projet en méthode Scrum</li>
                   </ul>
                 </div>
               </div>
-            </div>
-          </ScrollAnimationWrapper>
 
-          {/* Stage - Greta l'Essonne */}
-          <ScrollAnimationWrapper
-            id="career-item-4"
-            className="relative mb-20"
-            animationType="fade"
-            delay={0.6}
-          >
-            <div className="flex flex-col md:flex-row items-center">
-              <motion.div 
-                className="md:w-1/2 mb-8 md:mb-0 md:pl-12 order-2"
-                initial={{ opacity: 0, x: 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8 }}
-              >
-                <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center mb-2">
-                    <Briefcase className="text-emerald-500 mr-2" size={20} aria-hidden="true" />
-                    <h3 className="text-xl font-bold">Concepteur Développeur d'Applications</h3>
-                  </div>
-                  <p className="text-emerald-500 mb-2">Greta l'Essonne</p>
-                  <p className="text-gray-400 mb-4">
-                    Stage de 11 semaines dans le cadre du BTS, axé sur la conception et le développement d'applications métier avec Spring Boot.
-                  </p>
-                  <div className="flex items-center text-gray-500">
-                    <Calendar size={16} className="mr-1" aria-hidden="true" />
-                    <span>2022 - 2023</span>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div 
-                className="absolute left-0 md:left-1/2 top-6 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 transform md:translate-x-[-50%] z-10"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 }}
-                aria-hidden="true"
-              />
-              <div className="md:w-1/2 md:pr-12 md:text-right order-1">
-                <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
-                  <h4 className="font-semibold">Missions</h4>
-                  <ul className="list-disc list-inside text-gray-400 mt-2">
-                    <li>Conception et développement d'une application de gestion</li>
-                    <li>Création d'une API REST avec Spring Boot</li>
-                    <li>Tests unitaires avec jUnit et documentation</li>
-                    <li>Collaboration avec l'équipe de développement</li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </ScrollAnimationWrapper>
+          {/* Autres formations */}
+<ScrollAnimationWrapper
+  id="career-item-3"
+  className="relative mb-20"
+  animationType="fade"
+>
+  <div className="flex flex-col md:flex-row items-center">
+    <motion.div 
+      className="md:w-1/2 mb-8 md:mb-0 md:pl-12 order-2"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
+        <div className="flex items-center mb-2">
+          <BookOpen className="text-emerald-500 mr-2" size={20} aria-hidden="true" />
+          <h3 className="text-xl font-bold">Parcours antérieur</h3>
+        </div>
 
-          {/* Stage - Philiance Formation */}
-          <ScrollAnimationWrapper
-            id="career-item-5"
-            className="relative"
-            animationType="fade"
-            delay={0.8}
-          >
-            <div className="flex flex-col md:flex-row items-center">
-              <motion.div 
-                className="md:w-1/2 mb-8 md:mb-0 md:pr-12 md:text-right order-2 md:order-1"
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.8 }}
-              >
-                <div className="bg-slate-900 p-6 rounded-xl shadow-xl hover:shadow-emerald-500/10 transition-all duration-300 hover:-translate-y-1">
-                  <div className="flex items-center justify-end mb-2">
-                    <h3 className="text-xl font-bold mr-2">Développeur Web</h3>
-                    <Briefcase className="text-emerald-500" size={20} aria-hidden="true" />
-                  </div>
-                  <p className="text-emerald-500 mb-2">Philiance formation</p>
-                  <p className="text-gray-400 mb-4">
-                    Stage de 9 semaines, axé sur la création de sites et d'applications web interactifs pour des besoins pédagogiques.
-                  </p>
-                  <div className="flex items-center justify-end text-gray-500">
-                    <Calendar size={16} className="ml-2 mr-1" aria-hidden="true" />
-                    <span>2021 - 2022</span>
-                  </div>
-                </div>
-              </motion.div>
-              <motion.div 
-                className="absolute left-0 md:left-1/2 top-6 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 transform md:translate-x-[-50%] z-10"
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 }}
-                aria-hidden="true"
-              />
-              <div className="md:w-1/2 md:pl-12 order-1 md:order-2">
-                <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
-                  <h4 className="font-semibold">Missions</h4>
-                  <ul className="list-disc list-inside text-gray-400 mt-2">
-                    <li>Intégration HTML/CSS/JavaScript</li>
-                    <li>Utilisation de frameworks Symfony pour le front end</li>
-                    <li>Utilisation de PHP pour le backend</li>
-                    <li>Collaboration en équipes pour le développement</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </ScrollAnimationWrapper>
+        <div className="mb-4">
+          <p className="text-emerald-500">2020 – 2021</p>
+          <p className="text-gray-400">Formation en autodidacte de sécurité informatique et développement web – OpenClassrooms</p>
+        </div>
+
+        <div className="mb-4">
+          <p className="text-emerald-500">2017 – 2019</p>
+          <p className="text-gray-400">BTS Techniques Physiques pour l’Industrie et le Laboratoire – Lycée Jean Perrin</p>
+        </div>
+
+        <div>
+          <p className="text-emerald-500">2016 – 2017</p>
+          <p className="text-gray-400">Baccalauréat STL (Sciences Physiques et Chimiques en Laboratoire) – Lycée Galilée, Gennevilliers</p>
+        </div>
+      </div>
+    </motion.div>
+
+    <motion.div 
+      className="absolute left-0 md:left-1/2 top-6 w-8 h-8 bg-emerald-500 rounded-full border-4 border-slate-800 transform md:translate-x-[-50%] z-10"
+      initial={{ scale: 0 }}
+      whileInView={{ scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 }}
+      aria-hidden="true"
+    />
+
+    <div className="md:w-1/2 md:pr-12 md:text-right order-1">
+      <div className="md:hidden bg-slate-900 p-6 rounded-xl shadow-xl mb-4">
+        <h4 className="font-semibold">Compétences acquises</h4>
+        <ul className="list-disc list-inside text-gray-400 mt-2">
+          <li>Principes de cybersécurité (OpenClassrooms)</li>
+          <li>Connaissances en physique appliquée et instrumentation</li>
+          <li>Maîtrise des techniques de laboratoire scientifique</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ScrollAnimationWrapper>
+
         </div>
       </div>
     </section>

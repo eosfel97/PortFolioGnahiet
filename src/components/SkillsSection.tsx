@@ -9,33 +9,32 @@ const SkillsSection: React.FC = () => {
       title: "Langages de programmation",
       icon: <Code size={40} className="text-emerald-500 mb-4" aria-hidden="true" />,
       skills: [
-        { name: "Java", level: 90 },
-        { name: "JavaScript/TypeScript", level: 85 },
-        { name: "Python", level: 75 },
+        { name: "Java", level: 70 },
+        { name: "JavaScript/TypeScript", level: 50 },
+        { name: "Python", level: 30 },
         { name: "PHP", level: 70 },
-        { name: "SQL", level: 85 }
+        { name: "SQL", level: 70 },
+        { name: "TypeScript", level: 40 },
+        { name: "Symfony", level: 65 }
+
+        
       ]
     },
     {
       title: "Technologies Backend",
       icon: <Server size={40} className="text-emerald-500 mb-4" aria-hidden="true" />,
       skills: [
-        { name: "Spring Boot", level: 85 },
-        { name: "Node.js", level: 80 },
-        { name: "Express.js", level: 80 },
-        { name: "Django", level: 65 },
-        { name: "Laravel", level: 60 }
+        { name: "Spring Boot", level: 70 },
+        { name: "Node.js", level: 50 },
+        { name: "Flask", level: 30 },
       ]
     },
     {
       title: "Bases de données",
       icon: <Database size={40} className="text-emerald-500 mb-4" aria-hidden="true" />,
       skills: [
-        { name: "PostgreSQL", level: 85 },
-        { name: "MySQL", level: 80 },
-        { name: "MongoDB", level: 75 },
-        { name: "Redis", level: 60 },
-        { name: "Oracle", level: 65 }
+        { name: "PostgreSQL", level: 60 },
+        { name: "MySQL", level: 75 },
       ]
     },
     {
@@ -54,9 +53,8 @@ const SkillsSection: React.FC = () => {
       icon: <Terminal size={40} className="text-emerald-500 mb-4" aria-hidden="true" />,
       skills: [
         { name: "Git", level: 85 },
-        { name: "Docker", level: 70 },
+        { name: "Docker", level: 50 },
         { name: "CI/CD", level: 65 },
-        { name: "AWS", level: 60 },
         { name: "Linux", level: 75 }
       ]
     },
@@ -64,11 +62,10 @@ const SkillsSection: React.FC = () => {
       title: "Méthodologies",
       icon: <GitBranch size={40} className="text-emerald-500 mb-4" aria-hidden="true" />,
       skills: [
-        { name: "Agile/Scrum", level: 80 },
-        { name: "TDD", level: 70 },
-        { name: "REST API Design", level: 85 },
-        { name: "Microservices", level: 75 },
-        { name: "UML", level: 80 }
+        { name: "Agile/Scrum", level: 60 },
+        { name: "REST API Design", level: 50 },
+        { name: "Microservices", level: 50 },
+        { name: "UML", level: 60 }
       ]
     }
   ];

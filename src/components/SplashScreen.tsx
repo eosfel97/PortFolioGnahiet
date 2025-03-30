@@ -235,20 +235,20 @@ const SplashScreen: React.FC<SplashScreenProps> = ({ onExit }) => {
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-7xl font-bold mb-5 animate-slideUp">
               <span className="text-white inline-block">
-                {"GNAHIET".split('').map((letter, index) => (
+                {"Gnahiet Any".split('').map((letter, index) => (
                   <span 
                     key={index} 
                     className="animate-fadeInChar inline-block hover:scale-110 hover:text-emerald-400 transition-all duration-300"
                     style={{ animationDelay: `${index * 120}ms` }}
                   >
-                    {letter}
+                    {letter === ' ' ? '\u00A0' : letter}
                   </span>
                 ))}
               </span>
             </h1>
             <div className="relative inline-block">
               <p className="text-2xl sm:text-3xl text-emerald-500 animate-slideInFromBottom font-light tracking-wide">
-                Développeur d'Applications
+              Conception Développement d'applications
               </p>
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-emerald-500 to-blue-500 animate-expandWidth"></span>
             </div>

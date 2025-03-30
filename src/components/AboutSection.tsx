@@ -80,12 +80,13 @@ const AboutSection: React.FC = () => {
             >
               <h2 className="text-3xl font-bold mb-6 text-white">À propos de moi</h2>
               <div className="space-y-4 text-gray-300">
-                <p className="leading-relaxed">
-                  Je m'appelle GNAHIET et je suis un étudiant en licence informatique passionné par le développement et la conception d'applications web et mobiles. Fort de mes expériences en stage – notamment en tant que développeur web chez Philiance formation et concepteur développeur d'applications au Greta l'Essonne – je recherche actuellement un stage de 6 mois à partir d'avril pour valider mon cursus et acquérir une expérience professionnelle enrichissante.
-                </p>
-                <p className="leading-relaxed">
-                  Doté d'un esprit d'équipe, d'une grande adaptabilité, d'un goût prononcé pour le challenge et d'une forte autonomie, je m'efforce de toujours fournir des solutions innovantes et performantes répondant aux besoins du métier.
-                </p>
+              <p className="leading-relaxed">
+                Je m'appelle Any, étudiant en licence professionnelle d’informatique au Cnam, passionné par le développement et la conception d'applications web et mobiles. Fort de mes expériences de stage – notamment en tant que développeur web chez Philiance Formation et concepteur-développeur d'applications au Greta de l'Essonne – je suis actuellement à la recherche d’un stage de 6 mois à partir d’avril, afin de valider mon cursus et enrichir mon expérience professionnelle.
+              </p>
+              <p className="leading-relaxed mt-4">
+                Curieux, autonome, doté d’un esprit d’équipe et d’une forte capacité d’adaptation, je m’efforce de proposer des solutions innovantes et efficaces, toujours alignées avec les besoins métier.
+              </p>
+
               </div>
             </motion.div>
           </ScrollAnimationWrapper>
