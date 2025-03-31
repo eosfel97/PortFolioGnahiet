@@ -1,5 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import myLogo from '../assets/logo.svg';
 
 const Footer: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="text-xl font-bold text-emerald-500 mb-4 md:mb-0">
-            GNAHIET
+          <img src={myLogo} alt="Logo" className="h-16 w-auto" />
           </div>
           <nav aria-label="Footer Navigation" className="flex space-x-6">
             <a href="#home" className="text-gray-400 hover:text-emerald-400 transition-colors">Accueil</a>
